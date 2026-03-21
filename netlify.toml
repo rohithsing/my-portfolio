@@ -11,6 +11,5 @@
   from = "/*"
   to = "/index.html"
   status = 200
-  conditions = {Role = ["admin", "visitor"]}
   # Exclude API function paths from the SPA redirect
   force = false
