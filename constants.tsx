@@ -11,7 +11,7 @@ export const PORTFOLIO_DATA = {
     kaggle: "https://www.kaggle.com/rohithsing",
     instagram: "https://www.instagram.com/r0h1th_s1n9h",
   },
-  roles: ['AI Engineer', 'Front-end Developer', 'Full-stack Developer'],
+  roles: ['AI Engineer', 'Data Scientist', 'Front-end Developer', 'Full-stack Developer'],
   about: "I'm a passionate developer with a unique blend of expertise spanning Front-end, Full-stack, Artificial Intelligence & Machine Learning. My journey in tech is driven by a curiosity to build systems that look great and think intelligently.",
   skills: [
     {
