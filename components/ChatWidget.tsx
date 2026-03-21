@@ -42,7 +42,7 @@ const ChatWidget: React.FC = () => {
               <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold">R</div>
               <div>
                 <h3 className="font-bold text-sm">Portfolio Assistant</h3>
-                <p className="text-[10px] opacity-80">Powered by Gemini</p>
+                <p className="text-[10px] opacity-80">Ask me anything about Rohith!</p>
               </div>
             </div>
             <button onClick={() => setIsOpen(false)} className="hover:rotate-90 transition-transform">✕</button>
@@ -52,11 +52,10 @@ const ChatWidget: React.FC = () => {
           <div ref={scrollRef} className="flex-1 overflow-y-auto p-6 space-y-4">
             {messages.map((m, i) => (
               <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                <div className={`max-w-[85%] px-4 py-3 rounded-2xl text-sm leading-relaxed ${
-                  m.role === 'user' 
-                  ? 'bg-blue-600 text-white rounded-tr-none' 
-                  : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-tl-none'
-                }`}>
+                <div className={`max-w-[85%] px-4 py-3 rounded-2xl text-sm leading-relaxed ${m.role === 'user'
+                    ? 'bg-blue-600 text-white rounded-tr-none'
+                    : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-tl-none'
+                  }`}>
                   {m.text}
                 </div>
               </div>
@@ -75,14 +74,14 @@ const ChatWidget: React.FC = () => {
           {/* Input */}
           <form onSubmit={handleSubmit} className="p-4 border-t border-slate-200 dark:border-slate-800">
             <div className="relative">
-              <input 
-                type="text" 
+              <input
+                type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask me anything..."
                 className="w-full pl-4 pr-12 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all dark:text-white"
               />
-              <button 
+              <button
                 type="submit"
                 className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 disabled:opacity-50"
                 disabled={isLoading}
@@ -93,9 +92,9 @@ const ChatWidget: React.FC = () => {
           </form>
         </div>
       )}
-      
+
       {!isOpen && (
-        <button 
+        <button
           onClick={() => setIsOpen(true)}
           className="w-16 h-16 bg-blue-600 hover:bg-blue-700 text-white rounded-3xl shadow-2xl flex items-center justify-center text-2xl transition-all hover:scale-110 active:scale-95 group"
         >

@@ -52,7 +52,7 @@ export const handler = async (event: { body: string | null; httpMethod: string }
     const ai = new GoogleGenAI({ apiKey });
 
     const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+      model: "gemini-1.5-flash",
       contents: message,
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
@@ -70,7 +70,10 @@ export const handler = async (event: { body: string | null; httpMethod: string }
     return {
       statusCode: 500,
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ error: "Failed to get response from AI assistant" }),
+      body: JSON.stringify({ 
+        error: "Failed to get response from AI assistant",
+        details: error.message || String(error)
+      }),
     };
   }
 };

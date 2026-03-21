@@ -8,13 +8,14 @@ export async function askAssistant(prompt: string): Promise<string> {
     });
 
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      const errorData = await response.json().catch(() => ({}));
+      throw new Error(errorData.details || errorData.error || `HTTP error! status: ${response.status}`);
     }
 
     const data = await response.json();
     return data.reply || "I'm sorry, I couldn't process that request.";
-  } catch (error) {
+  } catch (error: any) {
     console.error("Chat Error:", error);
-    return "I'm having trouble connecting right now. Please try again later or contact Rohith directly!";
+    return `Connection error: ${error.message}`;
   }
 }
