@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# SPA redirect — all routes serve index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  conditions = {Role = ["admin", "visitor"]}
+  # Exclude API function paths from the SPA redirect
+  force = false
