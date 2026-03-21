@@ -51,20 +51,46 @@ export const handler = async (event: { body: string | null; httpMethod: string }
 
     const ai = new GoogleGenAI({ apiKey });
 
-    const response = await ai.models.generateContent({
-      model: "gemini-1.5-flash",
-      contents: message,
-      config: {
-        systemInstruction: SYSTEM_INSTRUCTION,
-        temperature: 0.7,
-      },
-    });
+    // Different API keys (especially free vs paid, or older keys) support different models.
+    const modelsToTry = [
+      "gemini-2.5-flash", 
+      "gemini-2.0-flash", 
+      "gemini-1.5-flash", 
+      "gemini-1.5-flash-8b", 
+      "gemini-pro"
+    ];
 
-    return {
-      statusCode: 200,
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ reply: response.text || "I'm sorry, I couldn't process that request." }),
-    };
+    let lastError = null;
+
+    for (const model of modelsToTry) {
+      try {
+        const response = await ai.models.generateContent({
+          model: model,
+          contents: message,
+          config: {
+            systemInstruction: SYSTEM_INSTRUCTION,
+            temperature: 0.7,
+          },
+        });
+        
+        return {
+          statusCode: 200,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ reply: response.text || "I'm sorry, I couldn't process that request." }),
+        };
+      } catch (error: any) {
+        lastError = error;
+        // If it's a 404 NOT_FOUND, it means the model isn't supported by this API key. Try the next one.
+        if (error.status === 404 || error.message?.includes("not found")) {
+          continue;
+        }
+        // For other errors (like auth), break out and fail.
+        break;
+      }
+    }
+
+    // If we exhausted all models or hit a non-404 error
+    throw lastError;
   } catch (error: any) {
     console.error("Gemini API Error:", error);
     return {
