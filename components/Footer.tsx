@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="text-center md:text-left">
           <p className="font-bold text-lg tracking-tighter">ROHITH<span className="text-blue-500">.</span>SINGH</p>
-          <p className="text-slate-500 text-sm mt-1">Built with React, Tailwind CSS, and Gemini AI.</p>
+          <p className="text-slate-500 text-sm mt-1">Built with React, Tailwind CSS, and VIBE.</p>
         </div>
-        
+
         <p className="text-slate-400 text-xs font-medium">
           &copy; {new Date().getFullYear()} Rohith Singh. All rights reserved.
         </p>
