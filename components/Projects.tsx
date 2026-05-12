@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
 
         {/* Filters */}
         <div className="flex justify-center gap-2 flex-wrap">
-          {['all', 'frontend', 'fullstack', 'ai'].map((f) => (
+          {['all', 'fullstack', 'ai'].map((f) => (
             <button
               key={f}
               onClick={() => setFilter(f as any)}

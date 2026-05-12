@@ -33,43 +33,43 @@ export const PORTFOLIO_DATA = {
   projects: [
     {
       id: '1',
-      title: "Fake News Detector",
+      title: "Cognify / Eduforge",
       category: "ai",
-      img: "/fakenews.jpeg",
-      description: "This AI legend uses real-time web grounding to fact-check headlines instantly. No cap, it snatches truth from the chaos, citing credible sources so you’re never caught lacking today.",
-      tags: ["Gemini AI", "React", "TypeScript"],
-      liveUrl: "https://rohithsfakenewsdetector.netlify.app/",
-      repoUrl: "https://github.com/rohithsing/Fake-News-Detector"
+      img: "/cognify.png",
+      description: "An AI-integrated personalized learning management system designed to revolutionize traditional education. Features dual roadmaps for structured learning, an AI chatbot mentor for real-time guidance, and an interactive code playground — powered by ML and Diffusion Models for adaptive student experiences.",
+      tags: ["Python", "AI/ML", "Diffusion Models", "NLP"],
+      liveUrl: "#",
+      repoUrl: "https://github.com/rohithsing"
     },
     {
       id: '2',
-      title: "Real-time SaaS Dashboard",
-      category: "fullstack",
-      img: "https://picsum.photos/seed/saas/800/600",
-      description: "Built a complete social media application with real-time chat, notifications, and user authentication.",
-      tags: ["React", "Node.js", "WebSockets"],
-      liveUrl: "#",
-      repoUrl: "#"
+      title: "Chiron Healthcare Assistant",
+      category: "ai",
+      img: "/Chiron AI.jpeg",
+      description: "A comprehensive healthcare assistant focused on medical lab report analysis. Utilizes OCR to extract data from reports and implements a machine learning model to predict Chronic Kidney Disease (CKD) risk, providing AI-generated medical explanations and personalized health recommendations.",
+      tags: ["Python", "OCR", "Machine Learning", "NLP"],
+      liveUrl: "https://chiron-ai.onrender.com/",
+      repoUrl: "https://github.com/rohithsing/Chiron-AI"
     },
     {
       id: '3',
-      title: "Intelligent Data Visualization",
-      category: "frontend",
-      img: "https://picsum.photos/seed/viz/800/600",
-      description: "Responsive dashboard for analyzing financial data, built with React and D3.js for complex animations.",
-      tags: ["React", "D3.js", "TypeScript"],
+      title: "Personality Assessment System",
+      category: "fullstack",
+      img: "/personality_assessment.png",
+      description: "A full-stack web application for automated personality assessment achieving 89.54% test accuracy. Features theory-informed feature engineering with an XGBoost classifier, and SMOTE-augmented datasets for fair and accurate personality profiling.",
+      tags: ["Python", "XGBoost", "SMOTE", "Machine Learning"],
       liveUrl: "#",
-      repoUrl: "#"
+      repoUrl: "https://github.com/rohithsing"
     },
     {
       id: '4',
-      title: "Chiron-AI",
+      title: "Fake News Detection System",
       category: "ai",
-      img: "/Chiron AI.jpeg",
-      description: "Chiron AI, a full-stack healthcare assistant that leverages artificial intelligence to deliver personalized medical insights and improve medication safety. Our goal was to make reliable healthcare information more accessible from the comfort of home.",
-      tags: ["Python", "FastAPI", "Groq-API"],
-      liveUrl: "https://chiron-ai.onrender.com/",
-      repoUrl: "https://github.com/rohithsing/Chiron-AI"
+      img: "/fakenews.jpeg",
+      description: "An AI-based verification system dedicated to identifying and flagging misinformation in digital media. Built with robust NLP models to analyze text patterns and linguistic cues typical of fake news, providing real-time content validation to combat false information.",
+      tags: ["Python", "AI", "NLP", "Machine Learning"],
+      liveUrl: "#",
+      repoUrl: "https://github.com/rohithsing/Fake-News-Detector"
     }
   ] as Project[]
 };
