@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
               Explore Projects
             </a>
             <a
-              href="/Rohith_Singh_CV.pdf"
+              href={`${import.meta.env.BASE_URL}Rohith_Singh_CV.pdf`}
               download
               className="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-2xl shadow-xl shadow-emerald-600/20 transition-all hover:scale-105 flex items-center gap-2"
             >
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-emerald-400 rounded-[3rem] rotate-6 group-hover:rotate-3 transition-transform duration-500"></div>
             <div className="absolute inset-0 bg-slate-100 dark:bg-slate-800 rounded-[3rem] overflow-hidden border-4 border-white dark:border-slate-700 shadow-2xl">
               <img
-                src="/profile.png"
+                src={`${import.meta.env.BASE_URL}profile.png`}
                 alt="Rohith Singh"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
               />

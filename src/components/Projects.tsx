@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
             >
               <div className="relative aspect-video overflow-hidden">
                 <img
-                  src={project.img}
+                  src={`${import.meta.env.BASE_URL}${project.img}`}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />

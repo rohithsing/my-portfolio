@@ -4,14 +4,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   base: '/my-portfolio/',
-  server: {
-    port: 3000,
-    host: '0.0.0.0',
-  },
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '.'),
+      '@': path.resolve(__dirname, './src'),
     },
   },
 });

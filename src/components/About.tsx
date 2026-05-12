@@ -26,7 +26,7 @@ const About: React.FC = () => {
         <div className="order-1 md:order-2 flex justify-center">
           <div className="w-full max-w-md aspect-square rounded-[3rem] overflow-hidden shadow-2xl rotate-3 border-8 border-white dark:border-slate-800">
             <img
-              src="/stage.JPG"
+              src={`${import.meta.env.BASE_URL}stage.JPG`}
               alt="Rohith Singh"
               className="w-full h-full object-cover"
             />
