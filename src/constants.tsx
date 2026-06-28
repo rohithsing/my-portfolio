@@ -17,7 +17,7 @@ export const PORTFOLIO_DATA = {
     {
       category: "Languages & Web",
       icon: "🎨",
-      items: ["Python", "C# (.NET)", "JavaScript", "TypeScript", "ReactJS", "Node.js", "HTML5", "CSS3", "jQuery", "REST APIs"]
+      items: ["Python", "Java", "C# (.NET)", "JavaScript", "TypeScript", "ReactJS", "Node.js", "HTML5", "CSS3", "jQuery", "REST APIs"]
     },
     {
       category: "Databases & Tools",
