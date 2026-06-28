@@ -11,23 +11,23 @@ export const PORTFOLIO_DATA = {
     kaggle: "https://www.kaggle.com/rohithsing",
     instagram: "https://www.instagram.com/r0h1th_s1n9h",
   },
-  roles: ['AI Engineer', 'Data Scientist', 'Front-end Developer', 'Full-stack Developer'],
-  about: "I'm a passionate developer with a unique blend of expertise spanning Front-end, Full-stack, Artificial Intelligence & Machine Learning. My journey in tech is driven by a curiosity to build systems that look great and think intelligently.",
+  roles: ['AI Engineer', 'Data Scientist', 'Full-stack Developer', 'Front-end Developer'],
+  about: "Computer Science undergraduate specializing in AI/ML and Full-Stack Web Development. Proficient in building responsive, scalable applications using ReactJS, .NET Core, and Python. Experienced in designing relational databases, writing optimized queries, and deploying REST APIs — backed by peer-reviewed research published with the IEEE.",
   skills: [
     {
-      category: "Front-end",
+      category: "Languages & Web",
       icon: "🎨",
-      items: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"]
+      items: ["Python", "C# (.NET)", "JavaScript", "TypeScript", "ReactJS", "Node.js", "HTML5", "CSS3", "jQuery", "REST APIs"]
     },
     {
-      category: "Full-stack",
+      category: "Databases & Tools",
       icon: "⚙️",
-      items: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB", "Firebase", "Docker"]
+      items: ["SQL Server", "PostgreSQL", "MongoDB", "MySQL", "Git", "GitHub", "Visual Studio", "Jupyter Notebooks"]
     },
     {
-      category: "AI & ML",
+      category: "AI / ML & Data",
       icon: "🧠",
-      items: ["TensorFlow", "PyTorch", "Scikit-learn", "OpenAI API", "Gemini API", "LangChain"]
+      items: ["Scikit-learn", "NumPy", "Pandas", "SpaCy", "NLTK", "OpenCV", "Matplotlib", "Django"]
     }
   ] as Skill[],
   projects: [
@@ -37,7 +37,7 @@ export const PORTFOLIO_DATA = {
       category: "ai",
       img: "cognify.png",
       description: "An AI-integrated personalized learning management system designed to revolutionize traditional education. Features dual roadmaps for structured learning, an AI chatbot mentor for real-time guidance, and an interactive code playground — powered by ML and Diffusion Models for adaptive student experiences.",
-      tags: ["Python", "AI/ML", "Diffusion Models", "NLP"],
+      tags: ["ReactJS", ".NET Core", "SQL Server", "Python", "NLP"],
       liveUrl: "https://cognify.ourspaces.net",
       repoUrl: "https://github.com/rohithsing"
     },
@@ -47,7 +47,7 @@ export const PORTFOLIO_DATA = {
       category: "ai",
       img: "Chiron AI.jpeg",
       description: "A comprehensive healthcare assistant focused on medical lab report analysis. Utilizes OCR to extract data from reports and implements a machine learning model to predict Chronic Kidney Disease (CKD) risk, providing AI-generated medical explanations and personalized health recommendations.",
-      tags: ["Python", "OCR", "Machine Learning", "NLP"],
+      tags: ["ReactJS", ".NET Framework", "SQL Server", "OCR", "NLP"],
       liveUrl: "https://chiron-ai.onrender.com/",
       repoUrl: "https://github.com/rohithsing/Chiron-AI"
     },
@@ -57,7 +57,7 @@ export const PORTFOLIO_DATA = {
       category: "fullstack",
       img: "personality_assessment.png",
       description: "A full-stack web application for automated personality assessment achieving 89.54% test accuracy. Features theory-informed feature engineering with an XGBoost classifier, and SMOTE-augmented datasets for fair and accurate personality profiling.",
-      tags: ["Python", "XGBoost", "SMOTE", "Machine Learning"],
+      tags: ["Python", "XGBoost", "SMOTE", "IEEE Published"],
       liveUrl: "#",
       repoUrl: "https://github.com/rohithsing"
     },
