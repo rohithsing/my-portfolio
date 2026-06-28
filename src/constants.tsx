@@ -27,7 +27,7 @@ export const PORTFOLIO_DATA = {
     {
       category: "AI / ML & Data",
       icon: "🧠",
-      items: ["Scikit-learn", "NumPy", "Pandas", "SpaCy", "NLTK", "OpenCV", "Matplotlib", "Django"]
+      items: ["Scikit-learn", "NumPy", "Pandas", "SpaCy", "NLTK", "OpenCV", "Matplotlib", "pyTorch", "TensorFlow", "Django",]
     }
   ] as Skill[],
   projects: [
