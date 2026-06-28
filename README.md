@@ -2,8 +2,8 @@
   <h1>🚀 Rohith Singh | Portfolio</h1>
   <p><strong>Crafting the next generation of intelligent web experiences with modern architecture.</strong></p>
   
-  <a href="https://rohithsingh.netlify.app" target="_blank">
-    <img src="https://img.shields.io/badge/Live_Website-rohithsingh.netlify.app-3b82f6?style=for-the-badge&logo=rocket" alt="Live Website" />
+  <a href="https://rohithsing.github.io/my-portfolio/" target="_blank">
+    <img src="https://img.shields.io/badge/Live_Website-rohithsing.github.io/my-portfolio-3b82f6?style=for-the-badge&logo=rocket" alt="Live Website" />
   </a>
 </div>
 
@@ -29,7 +29,7 @@ This project is built using modern, industry-standard web technologies:
 - **Framework**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Hosting**: [Netlify](https://www.netlify.com/)
+- **Hosting**: [GitHub Pages](https://pages.github.com/)
 
 ## 🚀 Getting Started
 
