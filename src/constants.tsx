@@ -38,7 +38,7 @@ export const PORTFOLIO_DATA = {
       img: "cognify.png",
       description: "An AI-integrated personalized learning management system designed to revolutionize traditional education. Features dual roadmaps for structured learning, an AI chatbot mentor for real-time guidance, and an interactive code playground — powered by ML and Diffusion Models for adaptive student experiences.",
       tags: ["Python", "AI/ML", "Diffusion Models", "NLP"],
-      liveUrl: "#",
+      liveUrl: "https://cognify.ourspaces.net",
       repoUrl: "https://github.com/rohithsing"
     },
     {
